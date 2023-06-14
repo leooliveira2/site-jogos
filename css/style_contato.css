@@ -1,0 +1,89 @@
+/*Parte principal da página contato*/
+.corpo_contato {
+    background-color: white;
+}
+
+.contato {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 10% 55% 35%;
+}
+
+.container_formulario {
+    display: grid;
+    gap: 8px;
+    grid-column: 2;
+}
+
+.contato .itens_contato {
+    display: grid;
+    gap: 8px;
+}
+
+.contato .input_padrao {
+    padding: 10px 5px;;
+}
+
+.contato .opcoes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+
+.contato .caixa_seletora {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.contato .caixa_seletora .caixa_seletora_opcoes {
+    width: 10vw;
+    margin-top: 3px;
+}
+
+.contato .tabela {
+    margin-bottom: 1.5em;
+}
+.contato .paragrafo_tabela {
+    margin-bottom: 5px;
+}
+
+.tabela__lista {
+    background-color: grey;
+    color: white;
+}
+
+.contato .tabela__lista tr, .contato table th, .contato table td {
+    border: 1px solid black;
+}
+
+.contato .tabela__lista th, .contato table td {
+    padding: 5px;
+}
+
+.contato .checkbox {
+    display: block;
+}
+
+.contato .envio_formulario {
+    background-color: grey;
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 8px;
+}
+
+.contato .envio_formulario:hover {
+    background-color: #95999C;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .contato {
+        display: flex;
+        width: 50vw;
+    }
+    .container_formulario {
+        margin: 0 10px;
+    }
+}

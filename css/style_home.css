@@ -1,0 +1,123 @@
+/*Página principal do programa*/
+.principal {
+    background: linear-gradient(#FEFEFE, #111111);
+}
+
+.principal .conteudo {
+    display: flex;
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.principal .controle_ps4 {
+    width: 20%;
+    height: 20%;
+    margin-right: 20px;
+    box-shadow: 0 1px 5px black;
+}
+
+.principal .conteudo .conteudo_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.principal .conteudo .conteudo_principal .item_conteudo_principal {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.principal .itens {
+    display: flex;
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.principal .itens .itens_de_venda {
+    margin-right: 15px;
+}
+
+.principal .itens .itens_de_venda .titulo_secundario {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.principal .itens .itens_de_venda .itens_lista_de_vendas:not(.ultimo_item_vendas) {
+    margin-bottom: 5px;
+}
+
+.principal .itens .imagem_jogo {
+    width: 40%;
+    height: 40%;
+    margin-left: 15px;
+}
+
+.principal .mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.principal .mapa .texto_mapa {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.principal .video {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/*Parte responsiva - mobile*/
+
+@media(max-width: 768px) {
+    /*Home*/
+    .principal .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal .conteudo .controle_ps4 {
+        width: 90%;
+        height: 90%;
+        margin-bottom: 20px;
+    }
+
+    .principal .conteudo .conteudo_principal {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .principal .conteudo .conteudo_principal .item_conteudo_principal:not(.ultimo_item_principal) {
+        margin-bottom: 10px;
+    }
+
+    .principal .itens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal .itens .itens_de_venda {
+        margin-bottom: 10px;
+    }
+
+    .principal .itens .imagem_jogo {
+        width: 90%;
+        height: 90%;
+    }
+
+    .principal .mapa .mapa_foto {
+        width: 80%;
+        height: 40%;
+    }
+
+    .principal .video .video_youtube {
+        width: 90%;
+    }
+}

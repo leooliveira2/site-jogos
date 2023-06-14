@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Contato | L Games-Shop</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href='css/style_cab_e_rod.css'>
+        <link rel="stylesheet" href="css/style_contato.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+   
+    <body>
+        <header class="cabecalho">
+            <div class="caixa">
+                <h1 class="logo">L Games-Shop | O Melhor em Jogos</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contato">
+            <form class="container_formulario">
+                <div class="itens_contato">
+                    <label for="nome_e_sobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nome_e_sobrenome" class="input_padrao" placeholder="Ex: João da Silva" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input_padrao" placeholder="seuemail@dominio.com" required>
+                    
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input_padrao" placeholder="(XX) XXXXX-XXXX" required>
+
+                    <label for="caixa_de_mensagem">Diga-nos o motivo de seu contato</label>
+                    <textarea cols="70" rows="10" id="caixa_de_mensagem" class="input_padrao"></textarea>
+                </div>
+
+                <fieldset class="opcoes">
+                    <p>Como prefere que entremos em contato?</p>
+                    
+                    <label for="email_radio"><input type="radio" id="email_radio" name="contato"> Email </label>
+
+                    <label for="telefone_radio"><input type="radio" id="telefone_radio" name="contato"> Telefone </label>
+
+                    <label for="whatsapp_radio"><input type="radio" id="whatsapp_radio" name="contato" checked> WhatsApp </label>
+                </fieldset>
+                
+                <fieldset class="caixa_seletora">   
+                    <p>Qual horário preferencial para o atendimento?</p>
+                    <select class="caixa_seletora_opcoes">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="tabela">
+                    <p class="paragrafo_tabela">Horário de funcionamento</p>
+                    
+                    <table class="tabela__lista">
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Segunda</td>
+                                <td>08h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td>
+                                <td>08h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td>
+                                <td>08h ~ 20h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                
+                <div class="checkbox_e_envio-formulario">
+                    <label class="checkbox"><input type="checkbox" checked> Deseja receber atualizações dos nossos produtos?</label>
+                    <input type="submit" value="Enviar Formulário" class="envio_formulario">
+                </div>
+            </form>
+        </main>
+
+        <footer class="rodape">
+            <h3 class="titulo_rodape">L Games-Shop</h3>
+            <p class="conteudo_rodape">&copy; Copyright L Games-Shop - 2022</p>
+        </footer>
+    </body>
+</html>

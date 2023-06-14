@@ -1,0 +1,97 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Cabeçalho da página*/
+.cabecalho .caixa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242222;
+    box-shadow: 0 1px 10px black;
+}
+
+.cabecalho .logo {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+    color: white;
+}
+
+.cabecalho .caixa nav ul{
+    display: flex;
+}
+
+.cabecalho .caixa li {
+    margin: 0 5px;
+}
+
+.caixa nav a {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 3px;
+}
+
+.caixa nav a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+/*rodapé da página*/
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242222;
+    height: 200px;
+    box-shadow: 0 1px 10px black;
+}
+
+.rodape .titulo_rodape {
+    margin-right: 5px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.rodape .conteudo_rodape {
+    margin-left: 5px;
+    color: white;
+}
+
+/*Parte responsiva - mobile*/
+
+@media(max-width: 768px) {
+    
+    /*Cabecalho*/
+    .cabecalho .caixa {
+        flex-direction: column;
+    }
+
+    .cabecalho .caixa ul {
+        flex-direction: column;
+    }
+
+    .cabecalho .caixa ul li {
+        margin: 5px 0;
+    }
+
+    /*rodape*/
+    .rodape {
+        flex-direction: column;
+    }
+
+    .rodape .titulo_rodape {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .rodape .conteudo_rodape {
+        text-align: center;
+    }
+}
